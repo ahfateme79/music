@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Vijit Ail">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Music Player,Vijit Ail">
+    <meta name="description" content="HTML/CSS Audio Player">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" type="text/css">
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- <div class="equalizer" id="equalizer">
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+      </div> -->
+
+    <section class="slider">
+        <audio>
+            <source>
+        </audio>
+        <div class="">
+
+            <div class="card">
+
+                <div class="card-img-top">
+
+                    <div class="playlist overlay">
+
+
+                        <ul class="list-group">
+                            <h4 class="text-center" style="padding:10px;color:white;margin:0;">Playlist</h4>
+                            <button value=0 class="list-group-item">Closer</button>
+                            <button value=1 class="list-group-item">Shape Of You</button>
+                            <button value=2 class="list-group-item">Unmistakable</button>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="Album-carousel" class="carousel slide">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                               
+
+                                <img src="./img/the-weeknd-2560x1440px.jpg" class="album-img">
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <img src="https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/9a/35/95/9a3595c7-c675-fd74-352f-44e3638ac123/190295851286.jpg/600x600bf.jpg"
+                                    class="album-img">
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/1f/c7/2d/mzi.vtzhepeg.jpg/600x600bf.jpg"
+                                    class="album-img">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="text">
+                        <h1>نهایت لذت از موریک</h1>
+                        <h2> <mark>Spotify</mark> با خرید اشتراک </h2>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="container">
+                            <div class="d-flex align-items-center mb-3">
+                                <span><i class="fa-solid fa-music"></i></span>
+                                <div id="songName">&nbsp;</div>
+
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button id=play-pause class="control-btn mr-4" value=1><i
+                                        class="fa fa-play"></i></button>
+
+                                <div id=range>
+                                    <div class="range-indicator range-indicator-pause">&nbsp;</div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <input type=range id="inputrange">
+                                </div>
+                            </div>
+                            <div class="controls d-flex justify-content-end mt-3 col-12">
+                                <button id="next" class="control-btn"><i class="fa-solid fa-forward-step"></i></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="items green">
+                    <h1>100M+</h1>
+                    <p>دسترسی به پیش از<br> 100 میلیون موزیک</p>
+                </div>
+                <div class="items dark">
+                    <h3>320Kbps</h3>
+                    <p>بالاترین کیفیت <br>ممکن موزیک</p>
+                </div>
+                <div class="items green">
+                    <h1>Ad free</h1>
+                    <p>از شر تمامی تبلیغات <br> راحت شوید</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="items dark">
+                    <h3>Unlimited</h3>
+                    <h4>Skips</h4>
+                    <p>بدون محدودیت <br> اسکیپ کنید
+                    </p>
+                </div>
+                <div class="items green">
+                    <h3>Play any</h3>
+                    <h4>Track</h4>
+                    <p>دسترسی به <br> تمامی آهنگ ها</p>
+                </div>
+                <div class="items dark">
+                    <h1>Offline Listening</h1>
+                    <p>پخش آفلاین و دانلود آهنگ <br> دلخواه شما</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="Subscription Individual">
+                        <h3>Premium <br> Individual</h3>
+                        <p>اکانت فردی</p>
+                        <h4>155<br>
+
+                            هزار تومان / ماه</h4>
+                    </div>
+                    <a href="" class="Subscription-btn">خرید اشتراک</a>
+                </div>
+                <div class="col">
+                    <div class="Subscription Family">
+                        <span class="Subscription-badge">پرطرفدارترین</span>
+                        <h3>Premium <br> Family</h3>
+                        <p>عضویت اکانت در زیر شاخه فمیلی</p>
+                        <h4>55<br>
+
+                            هزار تومان / ماه</h4>
+                    </div>
+                    <a href="" class="Subscription-btn Family-btn">خرید اشتراک</a>
+                </div>
+                <div class="col">
+                    <div class="Subscription Duo">
+                        <h3>Premium <br> Duo
+
+                        </h3>
+                        <p>دو اکانت مجزا
+
+                        </p>
+                        <h4>255<br>
+
+                            هزار تومان / ماه</h4>
+                    </div>
+                    <a href="" class="Subscription-btn Duo-btn">خرید اشتراک</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="bg-image">
+                <h3>بهترین تجربه موزیک
+
+                    <br>با دالبی اتموس
+                </h3>
+                <p>مثنممبنثمنبمکثنکنثکنمکثنبکمنثنبکنثبم
+
+                    نحبثنبنثنبحنثبنحثنبحنثنبثنبثحنثنحبن</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!-- partial -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

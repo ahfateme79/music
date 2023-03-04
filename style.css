@@ -1,0 +1,450 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: #00ff66;
+}
+
+input[type="range"] {
+  position: absolute;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+  height: 8px;
+  z-index: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: none;
+  height: 10px;
+  width: 10px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 10px;
+}
+
+#range {
+  position: relative;
+  background-color: #fff;
+  height: 8px;
+  width: 30%;
+  display: block;
+  overflow: hidden;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+.range-indicator {
+  position: absolute;
+  background: #00ff66;
+  height: 8px;
+  width: 0%;
+  display: block;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.dot { 
+  position: relative;
+  width: 4px;
+  height: 8px;
+  margin-left: 8px;
+  background:url(./img/the-weeknd-2560x1440px.jpg);
+ /* background-color: rgba(199,12,127,.8);*/
+  /*display: inline-block; */
+  float:left;
+  z-index: 2;
+  filter: grayscale(100%);
+
+}
+
+.card {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  box-shadow: none;
+  border: none;
+}
+
+.card-img-top {
+  position: relative;
+  height: 100vh;
+}
+
+.card-body {
+  padding: 0px;
+  padding-bottom: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 45px;
+  color: #fff;
+  z-index: 9;
+}
+
+#tracktime {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px;
+  
+}
+
+.album-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transform: scaleX(-1);
+}
+
+#Album-carousel {
+  width: 100%;
+  margin: auto;
+}
+
+.control-btn {
+  color: #fff;
+  background: transparent;
+  border: none;
+  font-size: 23px;
+}
+
+.control-btn:hover {
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.control-btn:focus {
+  outline: none;
+}
+
+.control-btn:active {
+  border: none;
+  outline: none;
+}
+
+#play-pause {
+  transition: all 0.2s;
+  color: #fff;
+}
+
+#songName {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+
+.range-indicator-pause {
+  background-color: #00ff66;
+  transition: all 0.5s;
+}
+
+.current-song {}
+
+#playlist-btn {
+  position: absolute;
+  transform: translate(-130px, 25px);
+  background: transparent;
+  border: none;
+  transition: color 0.2s;
+}
+
+#playlist-btn:hover {
+  cursor: pointer;
+}
+
+#shuffle-btn {
+  position: absolute;
+  transform: translate(105px, 25px);
+  background: transparent;
+  border: none;
+  transition: color 0.2s;
+}
+
+.playlist {
+  position: absolute;
+  width: 298px;
+  height: 0px;
+  background: transparent;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+}
+
+.list-group-item {
+  background-color: transparent;
+  transition: background-color 0.5s;
+  color: white;
+  border-color: white transparent;
+}
+
+.list-group-item.active {
+  transition: background-color 0.4s;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000a1;
+}
+
+.fa-solid.fa-music {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+/* .dot {
+  width:100%;
+  height:10px;
+  padding: 20px;
+  background:
+    radial-gradient(farthest-side,currentColor 50%,#0000),
+    radial-gradient(farthest-side,currentColor 50%,#0000);
+  background-size:10px 10px;
+} */
+
+.equalizer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+}
+ .equalizer .vertical {
+  height: 10px;
+  width: 10px;
+  margin: 2px;
+  background-color: #3d143d;
+  border-radius: 5px;
+  transition: all 0.01s;
+  transition-timing-function: ease-in-out;
+}
+.text{
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  color: #fff;
+  text-align: right;
+  z-index: 9;
+}
+.text h1{
+  font-size: 55px;
+  font-weight: 700;
+}
+.text h2{
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+mark{
+  color: #00ff66 !important;
+  background-color: transparent;
+  font-weight: 700;
+}
+.carousel-item{
+  position: relative;
+}
+.slider{
+  position: relative;
+  height: 100vh;
+}
+.slider::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom,transparent,#000000);
+  overflow: hidden;
+}
+.section{
+  background-color:#000000 ;
+  padding: 70px 0;
+}
+.bg-image{
+  width: 100%;
+  min-height: 500px;
+  background-image: url(./img/1920x1080_17_1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 50px;
+  border-radius: 25px;
+  color: #fff;
+  position: relative;
+}
+.bg-image::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #00000059;
+}
+.bg-image h3,.bg-image p{
+  position: relative;
+  z-index: 9;
+  text-align: right;
+}
+.bg-image h3{
+  font-size: 45px;
+}
+.Subscription{
+  width: 100%;
+  padding: 25px;
+  background-image: url(./img/photo_2023-03-04_05-36-33.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  border-radius: 25px;
+}
+.Subscription::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(235, 26, 96, 0.429);
+  border-radius: 25px;
+
+}
+.Subscription>*{
+  position: relative;
+  z-index: 9;
+}
+.Subscription-btn{
+  display: flex;
+  width: 100%;
+  background: rgba(235, 26, 96, 0.999);
+  color: #fff;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.Subscription-btn:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.Subscription h3{
+  font-size: 40px;
+}
+.Subscription p{
+  text-align: right;
+  font-size: 20px;
+  margin: 25px 0;
+}
+.Subscription h4{
+  font-size: 30px;
+  text-align: right;
+}
+.Duo{
+  background-image: url(./img/Copy_of_KILL_BILL_-_SZA_5.png);
+}
+.Duo::after{
+  background: rgba(235, 214, 26, 0.631);
+
+}
+.Duo-btn{
+  background: rgba(235, 214, 26, 0.804);
+}
+
+.Family{
+  background-image: url(./img/Copy_of_KILL_BILL_-_SZA_3.png);
+}
+.Family::after{
+  background: rgba(26, 103, 235, 0.675);
+
+}
+.Family-btn{
+  background: rgba(26, 103, 235, 0.906);
+}
+.Subscription-badge{
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  color: rgba(26, 103, 235, 0.906);
+  display: block;
+  padding: 5px 10px;
+  top: -20px;
+  left: 50%;
+  border-radius: 25px;
+  font-size: 20px;
+  transform: translateX(-50%);
+}
+.items{
+  padding:20px 25px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+}
+.green{
+  background-color: #00ff66;
+  color: #1e1c1c;
+}
+.items h1{
+  font-weight: 700;
+}
+.items h3{
+  font-weight: 700;
+}
+
+.items p{
+  font-size: 25px;
+  font-weight: 500;
+}
+.dark{
+  background-color: #1e1c1c;
+  color: #00ff66;
+
+}
+#next{
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  border: 4px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
