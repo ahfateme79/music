@@ -53,7 +53,7 @@ $(document).ready(function() {
       this.value = 1;
       $(this).html("<i class='fa fa-play'></i>");
       $(".range-indicator").addClass("range-indicator-pause");
-      $(".active").attr("style", "background-color:#F44336a1");
+      $(".active").attr("style", "background-color:transparent");
     }
   });
 
