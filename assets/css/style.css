@@ -83,7 +83,7 @@ input[type="range"]:focus {
   width: 4px;
   height: 8px;
   margin-left: 8px;
-  background:url(./img/the-weeknd-2560x1440px.jpg);
+  background:url(../img/the-weeknd-2560x1440px.jpg);
  /* background-color: rgba(199,12,127,.8);*/
   /*display: inline-block; */
   float:left;
@@ -319,7 +319,7 @@ mark{
 .bg-image{
   width: 100%;
   min-height: 500px;
-  background-image: url(./img/1920x1080_17_1.webp);
+  background-image: url(../img/1920x1080_17_1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -352,7 +352,7 @@ mark{
 .Subscription{
   width: 100%;
   padding: 25px;
-  background-image: url(./img/photo_2023-03-04_05-36-33.jpg);
+  background-image: url(../img/photo_2023-03-04_05-36-33.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -405,7 +405,7 @@ mark{
   text-align: right;
 }
 .Duo{
-  background-image: url(./img/Copy_of_KILL_BILL_-_SZA_5.png);
+  background-image: url(../img/Copy_of_KILL_BILL_-_SZA_5.png);
 }
 .Duo::after{
   background: rgba(235, 214, 26, 0.631);
@@ -416,7 +416,7 @@ mark{
 }
 
 .Family{
-  background-image: url(./img/Copy_of_KILL_BILL_-_SZA_3.png);
+  background-image: url(../img/Copy_of_KILL_BILL_-_SZA_3.png);
 }
 .Family::after{
   background: rgba(26, 103, 235, 0.675);
